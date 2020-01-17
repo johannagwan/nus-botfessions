@@ -23,7 +23,7 @@ def scroll(driver, timeout):
         new_height = driver.execute_script("return document.body.scrollHeight")
         if i == 2300:
             break
-        last_height = new_height
+        # last_height = new_height
         i += 1
 
 url = "https://nuswhispers.com/category/11"
