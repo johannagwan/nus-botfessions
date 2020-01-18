@@ -8,7 +8,7 @@
 
 9.times do |i|
   Confession.create(
-    body: "This is confession #{i + 1}",
+    confession_body: "This is confession #{i + 1}",
     category: rand(1..10)
   )
 end

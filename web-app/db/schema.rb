@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_01_18_132049) do
   enable_extension "plpgsql"
 
   create_table "confessions", force: :cascade do |t|
-    t.text "body", null: false
+    t.text "confession_body", null: false
     t.integer "category", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

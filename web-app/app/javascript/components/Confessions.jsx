@@ -28,7 +28,7 @@ class Confessions extends React.Component {
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
           <div className="card-body">
-            <body className="card-title">{confession.body}</body>
+            <body className="card-title">{confession.confession_body}</body>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ class Confessions extends React.Component {
         <div className="py-5">
           <main className="container">
             <div className="text-right mb-3">
-              <Link to="/recipe" className="btn custom-button">
+              <Link to="/confession" className="btn custom-button">
                 Create New Confession
               </Link>
             </div>
