@@ -52,7 +52,7 @@ class NewConfession extends React.Component {
         }
         throw new Error("Network response was not ok.");
       })
-      .then(response => this.props.history.push(`/recipe/${response.id}`))
+      .then(response => this.props.history.push(`/confessions`))
       .catch(error => console.log(error.message));
   }
 
@@ -84,10 +84,10 @@ class NewConfession extends React.Component {
                 onChange={this.onChange}
               />
               <button type="submit" className="btn custom-button mt-3">
-                Create Recipe
+                Create confessions
               </button>
-              <Link to="/recipes" className="btn btn-link mt-3">
-                Back to recipes
+              <Link to="/confessions" className="btn btn-link mt-3">
+                Back to confessions
               </Link>
             </form>
           </div>
