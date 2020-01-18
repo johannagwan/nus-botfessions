@@ -48,7 +48,7 @@ class Confessions extends React.Component {
             <body
               className="card-title"
               dangerouslySetInnerHTML={{
-                  __html: `${confession.confession_body}`
+                  __html: `#${confession.id}: ` + `${confession.confession_body}`
               }}
             />
           </div>
