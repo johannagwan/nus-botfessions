@@ -5,7 +5,7 @@ class ConfessionsController < ApplicationController
   end
 
   def create
-    confession = Confession.create!(confession_params)
+    confession = Confession.create(confession_params)
     if confession
       render json: confession
     else
@@ -24,7 +24,7 @@ class ConfessionsController < ApplicationController
   private
 
   def confession_params
-    params.permit(:body, :category)
+    params.permit(:confession_body, :category)
   end
 
   def confession

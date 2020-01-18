@@ -1,4 +1,4 @@
 class Confession < ApplicationRecord
-  validates :body, presence: true
+  validates :confession_body, presence: true
   validates :category, presence: true
 end
