@@ -4,6 +4,9 @@ import { slide as Menu } from 'react-burger-menu';
 import { Icon, InlineIcon } from '@iconify/react';
 import facebookIcon from '@iconify/icons-mdi/facebook';
 import twitterBox from '@iconify/icons-mdi/twitter-box';
+import watchIcon from '@iconify/icons-mdi/watch';
+import commentOutline from '@iconify/icons-mdi/comment-outline';
+import thumbUpOutline from '@iconify/icons-mdi/thumb-up-outline';
 
 class Confessions extends React.Component {
   constructor(props) {
@@ -35,7 +38,6 @@ class Confessions extends React.Component {
             <span class="category-social-media">
               No Category
             </span>
-            <Icon icon={home} />
             <div class="share-social-media">
               SHARE:
               <a
@@ -62,6 +64,23 @@ class Confessions extends React.Component {
                   __html: `#${confession.id}: ` + `${confession.confession_body}`
               }}
             />
+          </div>
+          <hr></hr>
+          <div class="post-footer">
+            <span class="post-time">
+              <Icon icon={watchIcon} />
+              10 minutes ago
+            </span>
+            <div class="post-media-summary">
+              <span class="comment">
+                <Icon icon={commentOutline} />
+                10
+              </span>
+              <span class="likes">
+                <Icon icon={thumbUpOutline} />
+                15
+              </span>
+            </div>
           </div>
         </div>
       </div>
