@@ -25,7 +25,7 @@ class Confessions extends React.Component {
   render() {
     const { confessions } = this.state;
     const allConfessions = confessions.map((confession, index) => (
-      <div key={index} className="col-md-6 col-lg-4">
+      <div key={index} className="confession">
         <div className="card mb-4">
           <div className="card-body">
             <body
