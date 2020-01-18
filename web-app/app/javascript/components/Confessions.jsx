@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
+import { Icon, InlineIcon } from '@iconify/react';
+import facebookIcon from '@iconify/icons-mdi/facebook';
+import twitterBox from '@iconify/icons-mdi/twitter-box';
 
 class Confessions extends React.Component {
   constructor(props) {
@@ -32,6 +35,7 @@ class Confessions extends React.Component {
             <span class="category-social-media">
               No Category
             </span>
+            <Icon icon={home} />
             <div class="share-social-media">
               SHARE:
               <a
@@ -39,7 +43,14 @@ class Confessions extends React.Component {
                 target="_blank"
                 class="btn btn-social-media"
               >
-                FB
+                <Icon icon={facebookIcon} />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="btn btn-social-media"
+              >
+                <Icon icon={twitterBox} />
               </a>
             </div>
           </div>
