@@ -28,10 +28,7 @@ class Confessions extends React.Component {
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
           <div className="card-body">
-            <h5 className="card-title">{confession.body}</h5>
-            <Link to={`/recipe/${confession.id}`} className="btn custom-button">
-              View Confession
-            </Link>
+            <body className="card-title">{confession.body}</body>
           </div>
         </div>
       </div>
