@@ -27,6 +27,21 @@ class Confessions extends React.Component {
     const { confessions } = this.state;
     const allConfessions = confessions.map((confession, index) => (
       <div key={index} className="confession">
+        <div class="post-header">
+          <span>
+            No Category
+          </span>
+          <div class="share-social-media">
+            SHARE:
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="btn btn-social-media"
+            >
+              FB
+            </a>
+          </div>
+        </div>
         <div className="card mb-4">
           <div className="card-body">
             <body
