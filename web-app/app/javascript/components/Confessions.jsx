@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { slide as Menu } from 'react-burger-menu';
 
 class Confessions extends React.Component {
   constructor(props) {
@@ -48,6 +49,14 @@ class Confessions extends React.Component {
   
     return (
       <>
+      <Menu>
+        <div id="home" className="menu-item">NUS Botfessions</div>
+        <div></div>
+        <div id="categories" className="menu-item">Categories</div>
+        <a id="about" className="menu-item" href="/rant">Rant</a>
+        <a id="contact" className="menu-item" href="/romance">Romance</a>
+        <a id="ask-prof-ben" className="menu-item" href="/ask-prof-ben">Ask Prof Ben</a>
+      </Menu>
         <section className="jumbotron jumbotron-fluid text-center">
           <div className="container py-5">
             <h1 className="display-4">Confessions from all over NUS</h1>
