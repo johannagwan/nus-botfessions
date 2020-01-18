@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'homepage#index'
   get 'confessions/index'
   post 'confessions/create'
   get '/show/:id', to: 'confessions#show'
