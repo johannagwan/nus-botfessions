@@ -28,7 +28,12 @@ class Confessions extends React.Component {
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
           <div className="card-body">
-            <body className="card-title">{confession.confession_body}</body>
+            <body
+              className="card-title"
+              dangerouslySetInnerHTML={{
+                  __html: `${confession.confession_body}`
+              }}
+            />
           </div>
         </div>
       </div>
