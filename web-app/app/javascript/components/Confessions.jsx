@@ -7,6 +7,7 @@ import twitterBox from '@iconify/icons-mdi/twitter-box';
 import watchIcon from '@iconify/icons-mdi/watch';
 import commentOutline from '@iconify/icons-mdi/comment-outline';
 import thumbUpOutline from '@iconify/icons-mdi/thumb-up-outline';
+import Logo from '../../assets/images/logo.png'; 
 
 class Confessions extends React.Component {
   constructor(props) {
@@ -92,11 +93,22 @@ class Confessions extends React.Component {
         </h4>
       </div>
     );
+
+    // CHANGE LOGO STYLE IN SIDEBAR
+    const logoStyleSidebar = {
+      height: '7%'
+    };
+
+    // CHANGE LOGO STYLE IN HEADER
+    const logoStyleHeader = {
+      height: '100px'
+    };
   
     return (
       <>
       <Menu>
-        <h2 id="home" className="menu-item">NUS Botfessions</h2>
+        <img src={Logo} style={logoStyleSidebar} />
+
         <hr></hr>
         <div></div>
         <h3 id="categories" className="menu-item">Categories</h3>
@@ -105,7 +117,7 @@ class Confessions extends React.Component {
       </Menu>
         <section className="jumbotron jumbotron-fluid text-center">
           <div className="container py-5">
-            <h1 className="display-4">Confessions from all over NUS</h1>
+            <img src={Logo} style={logoStyleHeader}/>
             <p className="lead text-muted">
               The buzz all over NUS, written by our human friends. I assure you that these
               are submissions made by our friends
