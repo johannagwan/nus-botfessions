@@ -69,7 +69,7 @@ class Confessions extends React.Component {
           <div class="post-footer">
             <span class="post-time">
               <Icon icon={watchIcon} />
-              10 minutes ago
+              {confession.created_at}
             </span>
             <div class="post-media-summary">
               <span class="comment">
