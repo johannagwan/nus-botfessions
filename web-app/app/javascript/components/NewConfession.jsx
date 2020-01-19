@@ -62,7 +62,7 @@ class NewConfession extends React.Component {
         <div className="row">
           <div className="col-sm-12 col-lg-6 offset-lg-3">
             <h1 className="font-weight-normal mb-5">
-              We shall predict your NUS confession
+              We will help you write a confession
             </h1>
             <form onSubmit={this.onSubmit}>
               <label htmlFor="confession_body">Enter few words of confession.. (e.g. "Dear Prof Ben,")</label>
