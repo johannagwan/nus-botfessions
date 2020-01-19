@@ -96,12 +96,12 @@ class Confessions extends React.Component {
     return (
       <>
       <Menu>
-        <div id="home" className="menu-item">NUS Botfessions</div>
+        <h2 id="home" className="menu-item">NUS Botfessions</h2>
+        <hr></hr>
         <div></div>
-        <div id="categories" className="menu-item">Categories</div>
-        <a id="about" className="menu-item" href="/rant">Rant</a>
-        <a id="contact" className="menu-item" href="/romance">Romance</a>
-        <a id="ask-prof-ben" className="menu-item" href="/ask-prof-ben">Ask Prof Ben</a>
+        <h3 id="categories" className="menu-item">Categories</h3>
+        <div>Coming soon...</div>
+        <a class="sidebar-link" href="https://github.com/johannagwan/nus-botfessions">Visit us on GitHub!</a>
       </Menu>
         <section className="jumbotron jumbotron-fluid text-center">
           <div className="container py-5">

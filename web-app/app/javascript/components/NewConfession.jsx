@@ -74,17 +74,17 @@ class NewConfession extends React.Component {
                 required
                 onChange={this.onChange}
               />
-              <label htmlFor="category">Category</label>
               <input
-                type="number"
+                type="hidden"
                 className="form-control"
                 id="category"
                 name="category"
                 required
                 onChange={this.onChange}
+                value="1"
               />
               <button type="submit" className="btn custom-button mt-3">
-                Create confessions
+                Create confession
               </button>
               <Link to="/confessions" className="btn btn-link mt-3">
                 Back to confessions
