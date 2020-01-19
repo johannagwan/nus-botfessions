@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
+import { Icon, InlineIcon } from '@iconify/react';
+import facebookIcon from '@iconify/icons-mdi/facebook';
+import twitterBox from '@iconify/icons-mdi/twitter-box';
+import watchIcon from '@iconify/icons-mdi/watch';
+import commentOutline from '@iconify/icons-mdi/comment-outline';
+import thumbUpOutline from '@iconify/icons-mdi/thumb-up-outline';
 
 class Confessions extends React.Component {
   constructor(props) {
@@ -28,13 +34,53 @@ class Confessions extends React.Component {
     const allConfessions = confessions.map((confession, index) => (
       <div key={index} className="confession">
         <div className="card mb-4">
+          <div class="post-header">
+            <span class="category-social-media">
+              No Category
+            </span>
+            <div class="share-social-media">
+              SHARE:
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="btn btn-social-media"
+              >
+                <Icon icon={facebookIcon} />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="btn btn-social-media"
+              >
+                <Icon icon={twitterBox} />
+              </a>
+            </div>
+          </div>
+          <hr></hr>
           <div className="card-body">
             <body
               className="card-title"
               dangerouslySetInnerHTML={{
-                  __html: `${confession.confession_body}`
+                  __html: `#${confession.id}: ` + `${confession.confession_body}`
               }}
             />
+          </div>
+          <hr></hr>
+          <div class="post-footer">
+            <span class="post-time">
+              <Icon icon={watchIcon} />
+              {confession.created_at}
+            </span>
+            <div class="post-media-summary">
+              <span class="comment">
+                <Icon icon={commentOutline} />
+                10
+              </span>
+              <span class="likes">
+                <Icon icon={thumbUpOutline} />
+                15
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -123,3 +123,47 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+/* === NUSWhispers' post CSS === */
+.post {
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  color: blue;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.post-header {
+  line-height: 50px;
+  color: #bbbbbb
+}
+
+.post-footer {
+  line-height: 50px;
+  color: #bbbbbb
+}
+
+.post-time {
+  padding-left: 20px;
+}
+
+.post-media-summary {
+  float: right;
+}
+
+.category-social-media {
+  padding-left: 20px;
+}
+
+.share-social-media {
+  float: right;
+  font-size: 12px;
+}
+
+.btn-social-media {
+  padding: 5px !important;
+}
+              
+.comment, .likes {
+  padding: 10px;
+}
