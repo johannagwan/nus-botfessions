@@ -62,10 +62,10 @@ class NewConfession extends React.Component {
         <div className="row">
           <div className="col-sm-12 col-lg-6 offset-lg-3">
             <h1 className="font-weight-normal mb-5">
-              Some cool confession description here
+              We will help you write a confession
             </h1>
             <form onSubmit={this.onSubmit}>
-              <label htmlFor="confession_body">Confession body</label>
+              <label htmlFor="confession_body">Enter few words of confession.. (e.g. "Dear Prof Ben,")</label>
               <textarea
                 className="form-control"
                 id="confession_body"
@@ -74,17 +74,17 @@ class NewConfession extends React.Component {
                 required
                 onChange={this.onChange}
               />
-              <label htmlFor="category">Category</label>
               <input
-                type="number"
+                type="hidden"
                 className="form-control"
                 id="category"
                 name="category"
                 required
                 onChange={this.onChange}
+                value="1"
               />
               <button type="submit" className="btn custom-button mt-3">
-                Create confessions
+                Create confession
               </button>
               <Link to="/confessions" className="btn btn-link mt-3">
                 Back to confessions
