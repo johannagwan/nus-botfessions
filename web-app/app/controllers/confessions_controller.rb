@@ -5,7 +5,12 @@ class ConfessionsController < ApplicationController
   end
 
   def create
-    confession = Confession.create(confession_params)
+    @result = `python /home/johanna/hnr2020/Confess.py #{params[:confession_body]}`
+    puts "before" 
+    puts @result 
+    puts @result.class 
+    puts "after" 
+    confession = Confession.create(confession_body: @result, category: params[:category]) 
     if confession
       render json: confession
     else
